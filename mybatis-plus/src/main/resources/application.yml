@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    password: root
+    username: root
+    driver-class-name: com.p6spy.engine.spy.P6SpyDriver
+    url: jdbc:p6spy:mysql://localhost:3306/spring_demo
+
+logging:
+  level:
+    top.liaoyichao.demo.mapper: debug
+
+mybatis-plus:
+  type-aliases-package: top.liaoyichao.demo.entity
+#  设置Mapper.xml 位置
+#  mapper-locations: classpath:/mapper/*.Mapper.xml

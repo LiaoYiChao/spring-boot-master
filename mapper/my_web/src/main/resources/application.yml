@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://112.74.46.153:12345/my_test
+logging:
+  level: debug
+server:
+  port: 8085

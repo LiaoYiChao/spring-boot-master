@@ -1,0 +1,23 @@
+package top.liaoyichao.demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cache.annotation.EnableCaching;
+import tk.mybatis.spring.annotation.MapperScan;
+
+/**
+ * @Author: LiaoYiChao
+ * @Date: 2019/4/12 22:24
+ * @Description:
+ */
+@SpringBootApplication
+@EnableCaching
+@MapperScan(basePackages = "top.liaoyichao.demo.mapper")
+public class RedisDemoApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(RedisDemoApplication.class, args);
+    }
+
+
+}
