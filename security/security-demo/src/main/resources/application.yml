@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/testone
+    password: root
+    username: root
+    driver-class-name: com.mysql.jdbc.Driver
+  session:
+    store-type: none    # Session 管理关闭
+  redis:
+    host: 112.74.46.153
+    port: 6379
+#security:
+#  basic:
+#    enabled: false    # security 安全设置 关闭
+
+my:
+  security:
+    browser:
+      loginPage: /my-login-test.html
+      tokenTime: 1000
+      signUpUrl:
+    social:
+      qq:
+        app-id:
+        app-secret:
+        filterProcessesUrl:
+
+
